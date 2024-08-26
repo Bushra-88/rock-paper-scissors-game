@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+section {
+  background-color: #1c1e2b;
+  width: 500px;
+  height: 600px;
+  color: #fff;
+  border-radius: 15px;
+  padding: 20px 20px 0 20px;
+  box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.458);
+  position: relative;
+}
+.score {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.score h2 {
+  font-size: 30px;
+  font-weight: normal;
+  color: #00b4d8;
+}
+.score p {
+  text-align: center;
+  padding: 10px;
+  background-color: #d5bdaf;
+  color: #8338ec;
+  font-weight: 600;
+  font-size: 30px;
+  border-radius: 5px;
+  width: 50px;
+  margin: 10px auto;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: opacity 0.5s ease;
+  /* display: none; */
+}
+
+.intro h1 {
+  font-size: 35px;
+  color: #e56b6f;
+  text-align: center;
+  font-weight: 600;
+  line-height: 14rem;
+}
+
+.intro button {
+  width: 40%;
+  height: 50%;
+  display: block;
+  margin: 25px 0 auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #00b4d8;
+  background-color: #d5bdaf;
+  box-shadow: 1px 1px 6px 3px #00b4d8;
+}
+
+.intro button:hover {
+  background-color: #e56b6f;
+  color: #fff;
+  box-shadow: 1px 1px 6px 3px rgba(141, 1, 1, 0.945);
+  cursor: pointer;
+}
+
+.match {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s ease;
+  /* display: none; */
+}
+
+.hands img {
+  width: 170px;
+  margin: 20% 0 10px 0;
+}
+.winner {
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 600;
+}
+
+.hands,
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.options button {
+  width: 140px;
+  height: 50px;
+  font-size: 25px;
+  background-color: #b56576;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  transition: 0.4s ease;
+}
+.options button:hover {
+  background-color: #e56b6f;
+  color: #fff;
+  box-shadow: 1px 1px 6px 3px rgba(252, 250, 250, 0.945);
+  cursor: pointer;
+}
+
+.player-hand {
+  transform: rotateY(180deg);
+}
+
+div.unactive {
+  opacity: 0;
+  pointer-events: none;
+}
+
+div.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: gray;
+}
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #00b4d8;
+}
